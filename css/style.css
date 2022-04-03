@@ -4,3 +4,72 @@
 
   box-sizing: border-box;
 }
+
+.bg-img img {
+  width: 380px;
+}
+
+.content-area h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
+.content-area p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+ul {
+  list-style: none;
+  padding: 0px !important;
+}
+
+ul li a {
+  display: block;
+  margin-bottom: 5px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  color: rgb(10, 10, 10);
+}
+
+@media only screen and (max-width: 768px){
+  .bg-img img {
+    display: none;
+  }
+
+  body {
+    min-height: 100vh;
+
+    background:  
+    linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0, 0, 0, 0.664) 100%), url(../img/gi.jpg);
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-area {
+    padding: 50px !important;
+    color: #fff;
+  }
+
+  ul li a {
+    color: rgb(255, 255, 255);
+  }
+}
